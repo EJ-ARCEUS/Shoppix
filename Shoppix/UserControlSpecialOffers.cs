@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Shoppix
 {
-    public partial class UserControlCart : UserControl
+    public partial class UserControlSpecialOffers : UserControl
     {
-        public UserControlCart()
+        public UserControlSpecialOffers()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void UserControlSpecialOffers_Load(object sender, EventArgs e)
         {
 
         }

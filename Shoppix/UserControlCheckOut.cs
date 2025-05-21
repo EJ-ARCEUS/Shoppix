@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Shoppix
 {
-    public partial class UserControlCart : UserControl
+    public partial class UserControlCheckOut : UserControl
     {
-        public UserControlCart()
+        public UserControlCheckOut()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

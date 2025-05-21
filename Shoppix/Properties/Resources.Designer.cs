@@ -63,6 +63,26 @@ namespace Shoppix.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _253_2533001_shopping_cart_logo_ecommerce_design_solutions_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("253-2533001_shopping-cart-logo-ecommerce-design-solutions-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blank_canned_carrots_14_5oz_goods_VR63kJ3_600 {
+            get {
+                object obj = ResourceManager.GetObject("blank-canned-carrots-14-5oz-goods-VR63kJ3-600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home {
             get {
                 object obj = ResourceManager.GetObject("home", resourceCulture);

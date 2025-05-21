@@ -60,11 +60,29 @@
     <Compile Include="UserControlCart.Designer.cs">
       <DependentUpon>UserControlCart.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlCheckOut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCheckOut.Designer.cs">
+      <DependentUpon>UserControlCheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlHome.Designer.cs">
       <DependentUpon>UserControlHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlProducts.Designer.cs">
+      <DependentUpon>UserControlProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSpecialOffers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSpecialOffers.Designer.cs">
+      <DependentUpon>UserControlSpecialOffers.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -82,8 +100,17 @@
     <EmbeddedResource Include="UserControlCart.resx">
       <DependentUpon>UserControlCart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCheckOut.resx">
+      <DependentUpon>UserControlCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlHome.resx">
       <DependentUpon>UserControlHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlProducts.resx">
+      <DependentUpon>UserControlProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSpecialOffers.resx">
+      <DependentUpon>UserControlSpecialOffers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -100,6 +127,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank-canned-carrots-14-5oz-goods-VR63kJ3-600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\253-2533001_shopping-cart-logo-ecommerce-design-solutions-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
