@@ -27,7 +27,6 @@ namespace Shoppix
             Sidepanel.Height = button1.Height;
             Sidepanel.Top = button1.Top;
             userControlHome1.BringToFront();
-        /*bold ni Pastor*/
         }
 
         private void button2_Click(object sender, EventArgs e)
