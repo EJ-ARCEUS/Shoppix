@@ -27,6 +27,7 @@ namespace Shoppix
             Sidepanel.Height = button1.Height;
             Sidepanel.Top = button1.Top;
             userControlHome1.BringToFront();
+            //bold
 
         }
 
