@@ -34,7 +34,6 @@ namespace Shoppix
             Sidepanel.Height = button2.Height;
             Sidepanel.Top = button2.Top;
             userControlCart1.BringToFront();
-            messaged.box("this is a commit");
 
         }
 
