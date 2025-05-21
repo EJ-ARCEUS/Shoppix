@@ -28,6 +28,7 @@ namespace Shoppix
             Sidepanel.Top = button1.Top;
             userControlHome1.BringToFront();
             MessageBox.Show("Welcome to Shoppix! Your one-stop shop for all your needs. this is a commit");
+            MessageBox.Show("this is another change");
         }
 
         private void button2_Click(object sender, EventArgs e)
