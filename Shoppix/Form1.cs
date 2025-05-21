@@ -28,7 +28,6 @@ namespace Shoppix
             Sidepanel.Top = button1.Top;
             userControlHome1.BringToFront();
 
-            MessageBox.Show("Hello ");
         }
 
         private void button2_Click(object sender, EventArgs e)
