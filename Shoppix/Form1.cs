@@ -28,6 +28,7 @@ namespace Shoppix
             Sidepanel.Top = button1.Top;
             userControlHome1.BringToFront();
             //bold
+            //bold2
 
         }
 
