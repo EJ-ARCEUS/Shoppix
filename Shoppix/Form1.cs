@@ -62,13 +62,14 @@ namespace Shoppix
 
         public void LoadUserControl(UserControl ProductControl)
         {
-            Sidepanel.Height = button1.Height;
-            Sidepanel.Top = button1.Top;
+            
 
             MainPanel.Controls.Clear();
             ProductControl.Dock = DockStyle.Fill;
             MainPanel.Controls.Add(ProductControl);
-    
+            Sidepanel.Height = button1.Height;
+            Sidepanel.Top = button1.Top;
+
         }
 
 

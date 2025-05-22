@@ -27,13 +27,15 @@ namespace Shoppix
             {
                 // Call the method in Form1 to load new control
                 mainForm.LoadUserControl(new UserControlProducts());
+
             }
 
 
         }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
 
-
-
+        }
     }
 }
