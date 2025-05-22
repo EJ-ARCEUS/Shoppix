@@ -15,6 +15,7 @@ namespace Shoppix
         public UserControlCheckOut()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
         }
     }
 }

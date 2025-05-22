@@ -41,6 +41,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.BckButton = new System.Windows.Forms.Button();
             this.userControlCart2 = new Shoppix.UserControlCart();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -171,6 +172,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.Controls.Add(this.BckButton);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
@@ -209,12 +211,28 @@
             this.MainPanel.Size = new System.Drawing.Size(1026, 678);
             this.MainPanel.TabIndex = 11;
             // 
+            // BckButton
+            // 
+            this.BckButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BckButton.FlatAppearance.BorderSize = 0;
+            this.BckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BckButton.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BckButton.ForeColor = System.Drawing.Color.Black;
+            this.BckButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BckButton.Location = new System.Drawing.Point(6, 3);
+            this.BckButton.Name = "BckButton";
+            this.BckButton.Size = new System.Drawing.Size(69, 52);
+            this.BckButton.TabIndex = 10;
+            this.BckButton.Text = "Back";
+            this.BckButton.UseVisualStyleBackColor = false;
+            this.BckButton.Click += new System.EventHandler(this.BckButton_Click);
+            // 
             // userControlCart2
             // 
             this.userControlCart2.Location = new System.Drawing.Point(0, 0);
-            this.userControlCart2.Margin = new System.Windows.Forms.Padding(72, 56, 72, 56);
+            this.userControlCart2.Margin = new System.Windows.Forms.Padding(1209729, 336568, 1209729, 336568);
             this.userControlCart2.Name = "userControlCart2";
-            this.userControlCart2.Size = new System.Drawing.Size(17313, 7307);
+            this.userControlCart2.Size = new System.Drawing.Size(65535, 65535);
             this.userControlCart2.TabIndex = 0;
             // 
             // Form1
@@ -253,11 +271,12 @@
         private UserControlHome userControlHome1;
         private UserControlCart userControlCart1;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private UserControlCart userControlCart2;
         private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.Button BckButton;
+        protected internal System.Windows.Forms.Button button8;
     }
 }
 

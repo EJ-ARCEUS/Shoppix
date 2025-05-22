@@ -15,6 +15,7 @@ namespace Shoppix
         public UserControlSpecialOffers()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
         }
 
         private void UserControlSpecialOffers_Load(object sender, EventArgs e)

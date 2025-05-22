@@ -16,6 +16,8 @@ namespace Shoppix
         {
             InitializeComponent();
             this.DoubleBuffered = true;
+
+        
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)

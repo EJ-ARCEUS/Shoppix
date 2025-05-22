@@ -15,6 +15,7 @@ namespace Shoppix
         public UserControlCart()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
