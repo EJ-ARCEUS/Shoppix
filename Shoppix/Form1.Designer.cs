@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.userControlCart2 = new Shoppix.UserControlCart();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.Sidepanel = new System.Windows.Forms.Panel();
@@ -42,8 +41,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.userControlCart2 = new Shoppix.UserControlCart();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,14 +71,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1002, 639);
             this.panel3.TabIndex = 10;
-            // 
-            // userControlCart2
-            // 
-            this.userControlCart2.Location = new System.Drawing.Point(0, 0);
-            this.userControlCart2.Margin = new System.Windows.Forms.Padding(21, 19, 21, 19);
-            this.userControlCart2.Name = "userControlCart2";
-            this.userControlCart2.Size = new System.Drawing.Size(5130, 2460);
-            this.userControlCart2.TabIndex = 0;
             // 
             // button8
             // 
@@ -110,7 +103,7 @@
             // Sidepanel
             // 
             this.Sidepanel.BackColor = System.Drawing.Color.DimGray;
-            this.Sidepanel.Location = new System.Drawing.Point(0, 202);
+            this.Sidepanel.Location = new System.Drawing.Point(3, 106);
             this.Sidepanel.Name = "Sidepanel";
             this.Sidepanel.Size = new System.Drawing.Size(10, 90);
             this.Sidepanel.TabIndex = 4;
@@ -122,7 +115,7 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(0, 490);
+            this.button4.Location = new System.Drawing.Point(6, 490);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(194, 90);
             this.button4.TabIndex = 6;
@@ -137,7 +130,7 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(0, 394);
+            this.button3.Location = new System.Drawing.Point(6, 394);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(194, 90);
             this.button3.TabIndex = 5;
@@ -152,7 +145,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(0, 298);
+            this.button2.Location = new System.Drawing.Point(3, 298);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 90);
             this.button2.TabIndex = 4;
@@ -178,10 +171,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.Controls.Add(this.button7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1026, 10);
+            this.panel2.Size = new System.Drawing.Size(1026, 64);
             this.panel2.TabIndex = 1;
             // 
             // button7
@@ -192,7 +186,7 @@
             this.button7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button7.Location = new System.Drawing.Point(1144, 12);
+            this.button7.Location = new System.Drawing.Point(954, 3);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(69, 52);
             this.button7.TabIndex = 9;
@@ -209,10 +203,19 @@
             // 
             // MainPanel
             // 
-            this.MainPanel.Location = new System.Drawing.Point(203, 82);
+            this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainPanel.Location = new System.Drawing.Point(200, 64);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1011, 646);
+            this.MainPanel.Size = new System.Drawing.Size(1026, 678);
             this.MainPanel.TabIndex = 11;
+            // 
+            // userControlCart2
+            // 
+            this.userControlCart2.Location = new System.Drawing.Point(0, 0);
+            this.userControlCart2.Margin = new System.Windows.Forms.Padding(72, 56, 72, 56);
+            this.userControlCart2.Name = "userControlCart2";
+            this.userControlCart2.Size = new System.Drawing.Size(17313, 7307);
+            this.userControlCart2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -221,7 +224,6 @@
             this.ClientSize = new System.Drawing.Size(1226, 742);
             this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
@@ -233,6 +235,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

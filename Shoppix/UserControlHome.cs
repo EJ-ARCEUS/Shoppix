@@ -19,20 +19,6 @@ namespace Shoppix
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            Form1 mainForm = this.FindForm() as Form1;
-            if (mainForm != null)
-            {
-                // Call the method in Form1 to load new control
-                mainForm.LoadUserControl(new UserControlProducts());
-
-            }
-
-
-        }
-
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
