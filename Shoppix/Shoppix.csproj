@@ -72,6 +72,12 @@
     <Compile Include="UserControlHome.Designer.cs">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlProductDesc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlProductDesc.Designer.cs">
+      <DependentUpon>UserControlProductDesc.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlProducts.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <EmbeddedResource Include="UserControlHome.resx">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlProductDesc.resx">
+      <DependentUpon>UserControlProductDesc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlProducts.resx">
       <DependentUpon>UserControlProducts.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\253-2533001_shopping-cart-logo-ecommerce-design-solutions-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0a6yzg9k7ypd1.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
