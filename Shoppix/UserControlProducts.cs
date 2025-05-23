@@ -13,6 +13,28 @@ namespace Shoppix
 {
     public partial class UserControlProducts : UserControl
     {
+        UserControlProductDesc productDesc = new UserControlProductDesc();
+
+        static UserControlProducts _obj;
+
+        public static UserControlProducts Instance
+        {
+            get
+            {
+                if (_obj == null)
+                {
+                    _obj = new UserControlProducts();
+                }
+                return _obj;
+            }
+
+        }
+
+        public Panel prevPanel
+        {
+            get { return panel1; }
+            set { prevPanel = value; }
+        }
 
         // Properties for the icon, title, and description
         private Image _icon;
@@ -24,7 +46,7 @@ namespace Shoppix
         public Image Icon
         {
             get { return _icon; }
-            set { _icon = value; btn_icon.Image = value;}
+            //set { _icon = value; btn_icon.Image = value;}
         }
 
         [Category("Custom Props")]
@@ -32,7 +54,7 @@ namespace Shoppix
         public string Title
         {
             get { return _title; }
-            set { _title = value; btn_title.Text = value; }
+            //set { _title = value; btn_title.Text = value; }
         }
 
         [Category("Custom Props")]
@@ -40,7 +62,7 @@ namespace Shoppix
         public string Description
         {
             get { return _description; }
-            set { _description = value; btn_description.Text = value; }
+            //set { _description = value; btn_description.Text = value; }
         }
 
         //dynamic user control
@@ -51,8 +73,21 @@ namespace Shoppix
             UserControl[] listItems = new UserControl[1];
 
             string[] titles = new string[1] { "bin" };
-            string[] descriptions = new string [1] { "bin is bin" };
-            Image[] icons = { Properties.Resources._0a6yzg9k7ypd1 };
+            string[] descriptions = new string[1] { "bin is bin" };
+            Image[] icons = new Image[1] { Properties.Resources._0a6yzg9k7ypd1};
+            /*
+            for(int i = 0; i < listItems.Length; i++)
+            {
+                //store control object on list array
+                listItems[i] = new UserControl();
+
+                listItems[i].titl = titles[i];
+                listItems[i]
+                listItems[i]
+
+            }
+            */
+        }
 
         public UserControlProducts()
         {
@@ -60,19 +95,33 @@ namespace Shoppix
             this.DoubleBuffered = true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void panel3_MouseClick(object sender, MouseEventArgs e)
         {
-
+            
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void btn1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void UserControlProducts_Load(object sender, EventArgs e)
         {
+            // Handles event with no event data
+            picturebox1.Click += new System.EventHandler(this.panelClick);
+        }
 
+        void panelClick(object sender, EventArgs e)
+        {
+            if (!UserControlProducts.Instance.prevPanel.Controls.ContainsKey("UserControlProductDesc"))
+            {
+                UserControlProductDesc ucpd = new UserControlProductDesc();
+                ucpd.Dock = DockStyle.Fill;
+                Form1.Instance.Mnpanel.Controls.Clear();
+                Form1.Instance.Mnpanel.Controls.Add(ucpd);
+                ucpd.Show();
+            }
         }
     }
+
 }

@@ -17,9 +17,12 @@ namespace Shoppix
             InitializeComponent();
         }
 
+        
+
         private void UserControlProductDesc_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }
