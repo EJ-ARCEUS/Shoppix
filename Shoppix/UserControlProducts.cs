@@ -36,34 +36,7 @@ namespace Shoppix
             set { prevPanel = value; }
         }
 
-        // Properties for the icon, title, and description
-        private Image _icon;
-        private string _title;
-        private string _description;
-
-        [Category("Custom Props")]
-
-        public Image Icon
-        {
-            get { return _icon; }
-            //set { _icon = value; btn_icon.Image = value;}
-        }
-
-        [Category("Custom Props")]
-
-        public string Title
-        {
-            get { return _title; }
-            //set { _title = value; btn_title.Text = value; }
-        }
-
-        [Category("Custom Props")]
-
-        public string Description
-        {
-            get { return _description; }
-            //set { _description = value; btn_description.Text = value; }
-        }
+        
 
         //dynamic user control
         private void dynamicControl()
