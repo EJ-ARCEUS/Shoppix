@@ -15,7 +15,6 @@ namespace Shoppix
         UserControlHome Home = new UserControlHome();
         UserControlProducts Products = new UserControlProducts();
         UserControlCart Cart = new UserControlCart();
-        UserControlSpecialOffers Offers = new UserControlSpecialOffers();
         UserControlCheckOut Checkout = new UserControlCheckOut();
 
         static Form1 _obj;
@@ -124,19 +123,6 @@ namespace Shoppix
             Cart.Dock = DockStyle.Fill;
         }
 
-        //Offers
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Sidepanel.Height = button3.Height;
-            Sidepanel.Top = button3.Top;
-
-
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(Offers);
-            Offers.Dock = DockStyle.Fill;
-
-        }
 
         // Checkout
 
@@ -147,7 +133,6 @@ namespace Shoppix
 
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(Checkout);
-            Offers.Dock = DockStyle.Fill;
 
         }
 

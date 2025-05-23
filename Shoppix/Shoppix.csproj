@@ -78,12 +78,6 @@
     <Compile Include="UserControlProducts.Designer.cs">
       <DependentUpon>UserControlProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlSpecialOffers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlSpecialOffers.Designer.cs">
-      <DependentUpon>UserControlSpecialOffers.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,9 +102,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlProducts.resx">
       <DependentUpon>UserControlProducts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlSpecialOffers.resx">
-      <DependentUpon>UserControlSpecialOffers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
