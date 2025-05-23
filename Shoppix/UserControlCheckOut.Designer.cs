@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "UserControlCheckOut";
-            this.Size = new System.Drawing.Size(1011, 646);
+            this.Size = new System.Drawing.Size(1026, 681);
             this.ResumeLayout(false);
             this.PerformLayout();
 

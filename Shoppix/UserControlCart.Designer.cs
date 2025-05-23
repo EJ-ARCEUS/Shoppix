@@ -60,7 +60,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(779, 646);
+            this.panel1.Size = new System.Drawing.Size(779, 681);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -69,7 +69,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(779, 646);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(779, 681);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // UserControlCart
@@ -80,7 +80,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "UserControlCart";
-            this.Size = new System.Drawing.Size(1011, 646);
+            this.Size = new System.Drawing.Size(1026, 681);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

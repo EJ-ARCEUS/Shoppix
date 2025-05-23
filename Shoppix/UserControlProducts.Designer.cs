@@ -64,9 +64,9 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(945, 0);
+            this.panel1.Location = new System.Drawing.Point(937, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(63, 646);
+            this.panel1.Size = new System.Drawing.Size(71, 646);
             this.panel1.TabIndex = 0;
             // 
             // button2
@@ -74,7 +74,7 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button2.Location = new System.Drawing.Point(0, 583);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 63);
+            this.button2.Size = new System.Drawing.Size(71, 63);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -85,7 +85,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 66);
+            this.button1.Size = new System.Drawing.Size(71, 66);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -113,8 +113,9 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(945, 646);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(937, 646);
             this.flowLayoutPanel1.TabIndex = 2;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panel2
             // 
@@ -124,7 +125,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(924, 115);
+            this.panel2.Size = new System.Drawing.Size(814, 115);
             this.panel2.TabIndex = 0;
             // 
             // button5
@@ -159,12 +160,16 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Info;
+            this.button3.BackgroundImage = global::Shoppix.Properties.Resources._0a6yzg9k7ypd1;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Location = new System.Drawing.Point(3, 124);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(199, 255);
             this.button3.TabIndex = 1;
+            this.button3.Tag = "pBtn";
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -173,6 +178,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(199, 255);
             this.button4.TabIndex = 2;
+            this.button4.Tag = "pBtn";
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -183,6 +189,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(199, 255);
             this.button6.TabIndex = 3;
+            this.button6.Tag = "pBtn";
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = false;
             // 
@@ -193,6 +200,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(199, 255);
             this.button7.TabIndex = 4;
+            this.button7.Tag = "pBtn";
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = false;
             // 
@@ -203,6 +211,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(199, 255);
             this.button8.TabIndex = 5;
+            this.button8.Tag = "pBtn";
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = false;
             // 
@@ -213,6 +222,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(199, 255);
             this.button9.TabIndex = 6;
+            this.button9.Tag = "pBtn";
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = false;
             // 
@@ -223,6 +233,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(199, 255);
             this.button10.TabIndex = 7;
+            this.button10.Tag = "pBtn";
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = false;
             // 
@@ -233,6 +244,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(199, 255);
             this.button11.TabIndex = 8;
+            this.button11.Tag = "pBtn";
             this.button11.Text = "button11";
             this.button11.UseVisualStyleBackColor = false;
             // 
@@ -243,6 +255,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(199, 255);
             this.button12.TabIndex = 9;
+            this.button12.Tag = "pBtn";
             this.button12.Text = "button12";
             this.button12.UseVisualStyleBackColor = false;
             // 
@@ -253,6 +266,7 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(199, 255);
             this.button13.TabIndex = 10;
+            this.button13.Tag = "pBtn";
             this.button13.Text = "button13";
             this.button13.UseVisualStyleBackColor = false;
             // 
@@ -263,6 +277,7 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(199, 255);
             this.button14.TabIndex = 11;
+            this.button14.Tag = "pBtn";
             this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = false;
             // 
@@ -273,6 +288,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(199, 255);
             this.button15.TabIndex = 12;
+            this.button15.Tag = "pBtn";
             this.button15.Text = "button15";
             this.button15.UseVisualStyleBackColor = false;
             // 
@@ -283,6 +299,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(199, 255);
             this.button16.TabIndex = 13;
+            this.button16.Tag = "pBtn";
             this.button16.Text = "button16";
             this.button16.UseVisualStyleBackColor = false;
             // 
@@ -293,6 +310,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(199, 255);
             this.button17.TabIndex = 14;
+            this.button17.Tag = "pBtn";
             this.button17.Text = "button17";
             this.button17.UseVisualStyleBackColor = false;
             // 
@@ -303,6 +321,7 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(199, 255);
             this.button18.TabIndex = 15;
+            this.button18.Tag = "pBtn";
             this.button18.Text = "button18";
             this.button18.UseVisualStyleBackColor = false;
             // 
@@ -313,6 +332,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(199, 255);
             this.button19.TabIndex = 16;
+            this.button19.Tag = "pBtn";
             this.button19.Text = "button19";
             this.button19.UseVisualStyleBackColor = false;
             // 

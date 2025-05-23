@@ -103,6 +103,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 270);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -220,7 +221,7 @@
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "UserControlHome";
-            this.Size = new System.Drawing.Size(1026, 678);
+            this.Size = new System.Drawing.Size(1026, 681);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
