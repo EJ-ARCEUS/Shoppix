@@ -64,9 +64,9 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(945, 0);
+            this.panel1.Location = new System.Drawing.Point(937, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(63, 646);
+            this.panel1.Size = new System.Drawing.Size(71, 646);
             this.panel1.TabIndex = 0;
             // 
             // button2
@@ -74,7 +74,7 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button2.Location = new System.Drawing.Point(0, 583);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 63);
+            this.button2.Size = new System.Drawing.Size(71, 63);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -85,7 +85,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 66);
+            this.button1.Size = new System.Drawing.Size(71, 66);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(945, 646);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(937, 646);
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -125,7 +125,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(924, 115);
+            this.panel2.Size = new System.Drawing.Size(814, 115);
             this.panel2.TabIndex = 0;
             // 
             // button5

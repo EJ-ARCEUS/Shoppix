@@ -221,7 +221,7 @@
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "UserControlHome";
-            this.Size = new System.Drawing.Size(1026, 678);
+            this.Size = new System.Drawing.Size(1026, 681);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -21,6 +21,7 @@ namespace Shoppix
 
         [Category("Custom Props")]
 
+        
         public Image Icon
         {
             get { return _icon; }
@@ -42,6 +43,7 @@ namespace Shoppix
             get { return _description; }
             set { _description = value; btn_description.Text = value; }
         }
+        
 
         //dynamic user control
         private void dynamicControl()
@@ -51,8 +53,9 @@ namespace Shoppix
             UserControl[] listItems = new UserControl[1];
 
             string[] titles = new string[1] { "bin" };
-            string[] descriptions = new string [1] { "bin is bin" };
+            string[] descriptions = new string[1] { "bin is bin" };
             Image[] icons = { Properties.Resources._0a6yzg9k7ypd1 };
+        }
 
         public UserControlProducts()
         {

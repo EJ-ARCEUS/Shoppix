@@ -111,7 +111,7 @@
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.pictureBoxProduct);
             this.Name = "UserControlProductDesc";
-            this.Size = new System.Drawing.Size(752, 602);
+            this.Size = new System.Drawing.Size(1026, 681);
             this.Load += new System.EventHandler(this.UserControlProductDesc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProduct)).EndInit();
             this.ResumeLayout(false);
