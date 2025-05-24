@@ -9,6 +9,8 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Shoppix.User_Controls;
+using static Shoppix.UserControlCart;
 
 namespace Shoppix
 {
@@ -18,6 +20,7 @@ namespace Shoppix
         UserControlProducts Products = new UserControlProducts();
         UserControlCart Cart = new UserControlCart();
         UserControlCheckOut Checkout = new UserControlCheckOut();
+        UserControlTesting Test = new UserControlTesting();
 
         static Form1 _obj;
 
@@ -33,8 +36,6 @@ namespace Shoppix
             }
 
         }
-
-
 
         public Panel Mnpanel
         {
@@ -83,45 +84,58 @@ namespace Shoppix
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BackButton.Visible = false;
+
+            if (!Form1.Instance.Mnpanel.Controls.ContainsKey("UserControlHome"))
+            {
+                UserControlHome Ucp = new UserControlHome();
+                Ucp.Dock = DockStyle.Fill;
+                Form1.Instance.MainPanel.Controls.Add(Ucp);
+
+            }
+            Form1.Instance.MainPanel.Controls["UserControlHome"].BringToFront();
+            Form1.Instance.BackButton.Visible = true;
 
             Sidepanel.Height = button1.Height;
             Sidepanel.Top = button1.Top;
-
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(Home);
-            Home.Dock = DockStyle.Fill;
-
         }
 
         //Products
 
         private void button8_Click(object sender, EventArgs e)
         {
-            
+
             if (!Form1.Instance.Mnpanel.Controls.ContainsKey("UserControlProducts"))
             {
                 UserControlProducts Ucp = new UserControlProducts();
                 Ucp.Dock = DockStyle.Fill;
-                Form1.Instance.Mnpanel.Controls.Add(Ucp);
+                Form1.Instance.MainPanel.Controls.Add(Ucp);
 
-                Sidepanel.Height = button8.Height;
-                Sidepanel.Top = button8.Top;
             }
-            Form1.Instance.Mnpanel.Controls["UserControlProducts"].BringToFront();
+            Form1.Instance.MainPanel.Controls["UserControlProducts"].BringToFront();
             Form1.Instance.BackButton.Visible = true;
+
+            Sidepanel.Height = button8.Height;
+            Sidepanel.Top = button8.Top;
         }
 
         //cart
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (!Form1.Instance.Mnpanel.Controls.ContainsKey("UserControlCart"))
+            {
+                Form1.Instance.Mnpanel.Controls.Clear();
+                UserControlCart Ucc = new UserControlCart();
+                Ucc.Dock = DockStyle.Fill;
+                Form1.Instance.MainPanel.Controls.Add(Ucc);
+
+
+            }
+            Form1.Instance.MainPanel.Controls["UserControlCart"].BringToFront();
+            Form1.Instance.BackButton.Visible = true;
+
             Sidepanel.Height = button2.Height;
             Sidepanel.Top = button2.Top;
-
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(Cart);
-            Cart.Dock = DockStyle.Fill;
         }
 
 
@@ -129,21 +143,21 @@ namespace Shoppix
 
         private void button4_Click(object sender, EventArgs e)
         {
+            List<CartItem> cartItems = Cart.GetCartItems();
 
-            var items = Cart.GetCartItems();  // ✅ This time: real cart instance
-
-            // 2. Pass those items to UCcheckout
-            Checkout.LoadCartItems(items);
+            UserControlCheckOut checkout = new UserControlCheckOut();
+            checkout.LoadCartItems(cartItems);
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(checkout);
 
             Sidepanel.Height = button4.Height;
             Sidepanel.Top = button4.Top;
 
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(Checkout);
             SoundPlayer selecta = new SoundPlayer(Properties.Resources.SELECTA_THEME_SONG);
-            selecta.Play();
+            //selecta.Play();
 
         }
+
 
         // Exit
         private void button7_Click(object sender, EventArgs e)

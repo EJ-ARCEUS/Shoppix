@@ -89,8 +89,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(783, 678);
+            this.panel1.Size = new System.Drawing.Size(783, 646);
             this.panel1.TabIndex = 3;
             // 
             // flowLayoutPanel1
@@ -103,9 +104,9 @@
             this.flowLayoutPanel1.Controls.Add(this.panel6);
             this.flowLayoutPanel1.Controls.Add(this.panel7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 77);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 73);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(783, 601);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(783, 573);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel3
@@ -254,7 +255,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(783, 77);
+            this.panel2.Size = new System.Drawing.Size(783, 73);
             this.panel2.TabIndex = 0;
             // 
             // UserControlCart
@@ -265,7 +266,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "UserControlCart";
-            this.Size = new System.Drawing.Size(1026, 678);
+            this.Size = new System.Drawing.Size(1008, 646);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

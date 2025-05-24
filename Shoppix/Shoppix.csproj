@@ -54,35 +54,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlCart.cs">
+    <Compile Include="User_Controls\UserControlCart.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlCart.Designer.cs">
+    <Compile Include="User_Controls\UserControlCart.Designer.cs">
       <DependentUpon>UserControlCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlCheckOut.cs">
+    <Compile Include="User_Controls\UserControlCheckOut.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlCheckOut.Designer.cs">
+    <Compile Include="User_Controls\UserControlCheckOut.Designer.cs">
       <DependentUpon>UserControlCheckOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlHome.cs">
+    <Compile Include="User_Controls\UserControlHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlHome.Designer.cs">
+    <Compile Include="User_Controls\UserControlHome.Designer.cs">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlProductDesc.cs">
+    <Compile Include="User_Controls\UserControlProductDesc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlProductDesc.Designer.cs">
+    <Compile Include="User_Controls\UserControlProductDesc.Designer.cs">
       <DependentUpon>UserControlProductDesc.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlProducts.cs">
+    <Compile Include="User_Controls\UserControlProducts.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlProducts.Designer.cs">
+    <Compile Include="User_Controls\UserControlProducts.Designer.cs">
       <DependentUpon>UserControlProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\UserControlTesting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\UserControlTesting.Designer.cs">
+      <DependentUpon>UserControlTesting.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -97,20 +103,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControlCart.resx">
+    <EmbeddedResource Include="User_Controls\UserControlCart.resx">
       <DependentUpon>UserControlCart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlCheckOut.resx">
+    <EmbeddedResource Include="User_Controls\UserControlCheckOut.resx">
       <DependentUpon>UserControlCheckOut.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlHome.resx">
+    <EmbeddedResource Include="User_Controls\UserControlHome.resx">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlProductDesc.resx">
+    <EmbeddedResource Include="User_Controls\UserControlProductDesc.resx">
       <DependentUpon>UserControlProductDesc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlProducts.resx">
+    <EmbeddedResource Include="User_Controls\UserControlProducts.resx">
       <DependentUpon>UserControlProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\UserControlTesting.resx">
+      <DependentUpon>UserControlTesting.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

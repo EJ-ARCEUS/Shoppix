@@ -23,28 +23,31 @@ namespace Shoppix
         {
             flowLayoutPanel1.Controls.Clear();
 
-            foreach (var item in items)
+            for (int i = 0; i < items.Count; i++)
             {
+                CartItem item = items[i];
+
                 Panel panel = new Panel();
                 panel.Size = new Size(754, 114);
                 panel.BackColor = Color.Linen;
 
                 PictureBox pb = new PictureBox();
                 pb.Image = item.ProductImage;
+                pb.BackColor = Color.Yellow;
+                pb.Size = new Size(80, 80);
+                pb.Location = new Point(10, 10);
                 pb.SizeMode = PictureBoxSizeMode.StretchImage;
-                pb.Dock = DockStyle.Top;
-                pb.Height = 60;
 
                 Label lbl = new Label();
                 lbl.Text = item.ProductName;
-                lbl.Dock = DockStyle.Bottom;
-                lbl.TextAlign = ContentAlignment.MiddleCenter;
+                lbl.AutoSize = true;
+                lbl.Location = new Point(100, 40);
 
-                panel.Controls.Add(lbl);
                 panel.Controls.Add(pb);
+                panel.Controls.Add(lbl);
 
                 flowLayoutPanel1.Controls.Add(panel);
             }
         }
     }
-}
+ }

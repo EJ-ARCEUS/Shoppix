@@ -28,22 +28,25 @@ namespace Shoppix
         {
             List<CartItem> items = new List<CartItem>();
 
-            foreach (Panel panel in flowLayoutPanel1.Controls.OfType<Panel>())
+            // Loop through each panel in the FlowLayoutPanel
+            for (int i = 0; i < flowLayoutPanel1.Controls.Count; i++)
             {
-                var pic = panel.Controls.OfType<PictureBox>().FirstOrDefault();
-                var lbl = panel.Controls.OfType<Label>().FirstOrDefault();
+                var panel = flowLayoutPanel1.Controls[i] as Panel;
 
-                if (pic == null || lbl == null)
+                if (panel != null)
                 {
-                    MessageBox.Show("Missing image or label");
-                    continue;
+                    PictureBox pb = panel.Controls.OfType<PictureBox>().FirstOrDefault();
+                    Label lbl = panel.Controls.OfType<Label>().FirstOrDefault();
+
+                    if (pb != null && lbl != null)
+                    {
+                        items.Add(new CartItem
+                        {
+                            ProductName = lbl.Text,
+                            ProductImage = pb.Image // Reference the existing image
+                        });
+                    }
                 }
-
-                items.Add(new CartItem
-                {
-                    ProductName = lbl.Text,
-                    ProductImage = pic.Image
-                });
             }
 
             return items;

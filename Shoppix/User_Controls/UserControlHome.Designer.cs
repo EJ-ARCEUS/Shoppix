@@ -45,8 +45,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -72,11 +74,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(808, 27);
+            this.label3.Location = new System.Drawing.Point(843, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(131, 46);
             this.label3.TabIndex = 11;
             this.label3.Text = "Home";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -184,7 +187,7 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = global::Shoppix.Properties.Resources._253_2533001_shopping_cart_logo_ecommerce_design_solutions_removebg_preview;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(19, 27);
+            this.panel4.Location = new System.Drawing.Point(33, 32);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(152, 90);
             this.panel4.TabIndex = 9;
@@ -194,7 +197,7 @@
             this.button5.BackColor = System.Drawing.Color.Red;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Snow;
-            this.button5.Location = new System.Drawing.Point(720, 95);
+            this.button5.Location = new System.Drawing.Point(733, 59);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(59, 22);
             this.button5.TabIndex = 16;
@@ -203,27 +206,39 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(234, 95);
+            this.textBox1.Location = new System.Drawing.Point(247, 59);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(480, 22);
             this.textBox1.TabIndex = 15;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel10.Controls.Add(this.label3);
+            this.panel10.Controls.Add(this.button5);
+            this.panel10.Controls.Add(this.textBox1);
+            this.panel10.Controls.Add(this.panel4);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1008, 136);
+            this.panel10.TabIndex = 17;
             // 
             // UserControlHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "UserControlHome";
-            this.Size = new System.Drawing.Size(1026, 678);
+            this.Size = new System.Drawing.Size(1008, 646);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +263,6 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel10;
     }
 }
