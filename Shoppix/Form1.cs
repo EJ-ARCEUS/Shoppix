@@ -129,6 +129,12 @@ namespace Shoppix
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+            var items = Cart.GetCartItems();  // ✅ This time: real cart instance
+
+            // 2. Pass those items to UCcheckout
+            Checkout.LoadCartItems(items);
+
             Sidepanel.Height = button4.Height;
             Sidepanel.Top = button4.Top;
 

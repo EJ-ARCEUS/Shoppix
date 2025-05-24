@@ -206,6 +206,7 @@
             // 
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainPanel.Location = new System.Drawing.Point(200, 64);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1026, 678);
             this.MainPanel.TabIndex = 11;
@@ -213,7 +214,7 @@
             // userControlCart2
             // 
             this.userControlCart2.Location = new System.Drawing.Point(0, 0);
-            this.userControlCart2.Margin = new System.Windows.Forms.Padding(2721891, 695486, 2721891, 695486);
+            this.userControlCart2.Margin = new System.Windows.Forms.Padding(4082836, 999761, 4082836, 999761);
             this.userControlCart2.Name = "userControlCart2";
             this.userControlCart2.Size = new System.Drawing.Size(65535, 65535);
             this.userControlCart2.TabIndex = 0;
@@ -246,7 +247,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel Sidepanel;
         private System.Windows.Forms.Button button6;
@@ -259,6 +259,7 @@
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Button BckButton;
         protected internal System.Windows.Forms.Button button8;
+        public System.Windows.Forms.Button button4;
     }
 }
 
