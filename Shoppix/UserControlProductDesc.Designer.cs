@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBoxProduct = new System.Windows.Forms.PictureBox();
-            this.labelName = new System.Windows.Forms.Label();
-            this.labelDesc = new System.Windows.Forms.Label();
+            this.icon = new System.Windows.Forms.PictureBox();
+            this.name = new System.Windows.Forms.Label();
+            this.desc = new System.Windows.Forms.Label();
             this.btnAddCart = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
             this.textBoxQua = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.price = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBoxProduct
+            // icon
             // 
-            this.pictureBoxProduct.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxProduct.Location = new System.Drawing.Point(3, 3);
-            this.pictureBoxProduct.Name = "pictureBoxProduct";
-            this.pictureBoxProduct.Size = new System.Drawing.Size(229, 195);
-            this.pictureBoxProduct.TabIndex = 0;
-            this.pictureBoxProduct.TabStop = false;
+            this.icon.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.icon.Location = new System.Drawing.Point(3, 3);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(229, 195);
+            this.icon.TabIndex = 0;
+            this.icon.TabStop = false;
             // 
-            // labelName
+            // name
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(248, 3);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(93, 16);
-            this.labelName.TabIndex = 1;
-            this.labelName.Text = "product NAem";
+            this.name.AutoSize = true;
+            this.name.Location = new System.Drawing.Point(248, 3);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(93, 16);
+            this.name.TabIndex = 1;
+            this.name.Text = "product NAem";
             // 
-            // labelDesc
+            // desc
             // 
-            this.labelDesc.AutoSize = true;
-            this.labelDesc.Location = new System.Drawing.Point(248, 93);
-            this.labelDesc.Name = "labelDesc";
-            this.labelDesc.Size = new System.Drawing.Size(37, 16);
-            this.labelDesc.TabIndex = 2;
-            this.labelDesc.Text = "desc";
+            this.desc.AutoSize = true;
+            this.desc.Location = new System.Drawing.Point(248, 93);
+            this.desc.Name = "desc";
+            this.desc.Size = new System.Drawing.Size(37, 16);
+            this.desc.TabIndex = 2;
+            this.desc.Text = "desc";
             // 
             // btnAddCart
             // 
@@ -107,12 +107,12 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.price);
             this.panel1.Controls.Add(this.btnPlus);
-            this.panel1.Controls.Add(this.pictureBoxProduct);
+            this.panel1.Controls.Add(this.icon);
             this.panel1.Controls.Add(this.textBoxQua);
-            this.panel1.Controls.Add(this.labelName);
-            this.panel1.Controls.Add(this.labelDesc);
+            this.panel1.Controls.Add(this.name);
+            this.panel1.Controls.Add(this.desc);
             this.panel1.Controls.Add(this.btnAddCart);
             this.panel1.Controls.Add(this.btnMinus);
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -120,14 +120,14 @@
             this.panel1.Size = new System.Drawing.Size(707, 279);
             this.panel1.TabIndex = 8;
             // 
-            // label1
+            // price
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(248, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "price";
+            this.price.AutoSize = true;
+            this.price.Location = new System.Drawing.Point(248, 43);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(37, 16);
+            this.price.TabIndex = 7;
+            this.price.Text = "price";
             // 
             // flowLayoutPanel1
             // 
@@ -155,7 +155,7 @@
             this.Name = "UserControlProductDesc";
             this.Size = new System.Drawing.Size(752, 602);
             this.Load += new System.EventHandler(this.UserControlProductDesc_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -165,15 +165,15 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBoxProduct;
-        private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelDesc;
+        private System.Windows.Forms.PictureBox icon;
+        private System.Windows.Forms.Label name;
+        private System.Windows.Forms.Label desc;
         private System.Windows.Forms.Button btnAddCart;
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.TextBox textBoxQua;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label price;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btn;
     }
