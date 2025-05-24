@@ -17,9 +17,9 @@ namespace Shoppix
             InitializeComponent();
         }
 
-        // Properties for the icon, title, and description
+        // Properties for the icon, name, description, and price
         private Image _icon;
-        private string _title;
+        private string _name;
         private string _description;
         private string _price;
 
@@ -33,10 +33,10 @@ namespace Shoppix
 
         [Category("Custom Props")]
 
-        public string Title
+        public string Name
         {
-            get { return _title; }
-            set { _title = value; name.Text = value; }
+            get { return _name; }
+            set { _name = value; name.Text = value; }
         }
 
         [Category("Custom Props")]
@@ -53,10 +53,23 @@ namespace Shoppix
             set { _description = value; price.Text = value; }
         }
 
-        private void UserControlProductDesc_Load(object sender, EventArgs e)
+        // Quantity math
+
+        int q = 1, val = 1;
+
+        private void btnMinus_Click(object sender, EventArgs e)
         {
+            q =- val;
+            string myString = q.ToString();
+            label1.Text = myString;
 
         }
 
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            q =+ val;
+            string myString = q.ToString();
+            label1.Text = myString;
+        }
     }
 }

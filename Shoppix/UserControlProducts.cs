@@ -30,14 +30,6 @@ namespace Shoppix
 
         }
 
-        public Panel prevPanel
-        {
-            get { return panel1; }
-            set { prevPanel = value; }
-        }
-
-        
-
         //dynamic user control
         private void dynamicControl()
         {
@@ -46,8 +38,8 @@ namespace Shoppix
             UserControlProductDesc[] listItems = new UserControlProductDesc[5];
 
             string[] titles = new string[5] { "camellya's armpit", "Vivian's nude", "Master shifu", "pyromaniac armpit", "summer chocolate", };
-            string[] descriptions = new string[5] { "", "", "", "", "", };
-            string[] price = new string[5] { "", "", "", "", "", };
+            string[] descriptions = new string[5] { "some juicy shit", "im hard rn", "very powerful ally", "smells like nitro fuel", "this is a supposed child wtf", };
+            string[] price = new string[5] { "377.99", "739.99", "455.99", "599.99", "289.99", };
             Image[] icons = new Image[5] { Properties.Resources.camellya, Properties.Resources.vivian, Properties.Resources.master, Properties.Resources.burnice, Properties.Resources.iori};
             
             for(int i = 0; i < listItems.Length; i++)
@@ -60,7 +52,7 @@ namespace Shoppix
                 listItems[i].Price = price[i];
                 listItems[i].Icon = icons[i];
 
-                
+                flowLayoutPanel1.Controls.Add(listItems[i]);
             }
             
         }
@@ -78,26 +70,9 @@ namespace Shoppix
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            
+            dynamicControl();
         }
 
-        private void UserControlProducts_Load(object sender, EventArgs e)
-        {
-            // Handles event with no event data
-            picturebox1.Click += new System.EventHandler(this.panelClick);
-        }
-
-        void panelClick(object sender, EventArgs e)
-        {
-            if (!UserControlProducts.Instance.prevPanel.Controls.ContainsKey("UserControlProductDesc"))
-            {
-                UserControlProductDesc ucpd = new UserControlProductDesc();
-                ucpd.Dock = DockStyle.Fill;
-                Form1.Instance.Mnpanel.Controls.Clear();
-                Form1.Instance.Mnpanel.Controls.Add(ucpd);
-                ucpd.Show();
-            }
-        }
     }
 
 }
