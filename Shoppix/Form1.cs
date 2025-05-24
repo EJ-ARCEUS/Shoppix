@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Shoppix.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -132,6 +134,8 @@ namespace Shoppix
 
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(Checkout);
+            SoundPlayer selecta = new SoundPlayer(Properties.Resources.SELECTA_THEME_SONG);
+            selecta.Play();
 
         }
 

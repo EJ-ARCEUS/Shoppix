@@ -137,5 +137,8 @@
   <ItemGroup>
     <None Include="Resources\0a6yzg9k7ypd1.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SELECTA THEME SONG.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

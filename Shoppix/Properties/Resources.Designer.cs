@@ -99,5 +99,14 @@ namespace Shoppix.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream SELECTA_THEME_SONG {
+            get {
+                return ResourceManager.GetStream("SELECTA_THEME_SONG", resourceCulture);
+            }
+        }
     }
 }
