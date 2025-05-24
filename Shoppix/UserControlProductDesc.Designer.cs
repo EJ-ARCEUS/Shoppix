@@ -104,6 +104,8 @@
             this.textBoxQua.Name = "textBoxQua";
             this.textBoxQua.Size = new System.Drawing.Size(49, 22);
             this.textBoxQua.TabIndex = 6;
+            this.textBoxQua.Text = "1";
+            this.textBoxQua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
