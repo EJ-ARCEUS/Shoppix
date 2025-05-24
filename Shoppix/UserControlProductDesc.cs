@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Shoppix
 {
@@ -55,21 +56,41 @@ namespace Shoppix
 
         // Quantity math
 
-        int q = 1, val = 1;
+        int q = 1;
+        bool mClick = false;
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            q =- val;
-            string myString = q.ToString();
-            label1.Text = myString;
-
+            if (!mClick)
+            {
+                mClick = true;
+                if (q == 0)
+                {
+                    int i = 0;
+                    string myString2 = i.ToString();
+                    label1.Text = myString2;
+                    mClick = false;
+                }
+                else
+                {
+                    q = q - 1;
+                    string myString = q.ToString();
+                    label1.Text = myString;
+                    mClick = false;
+                }
+            } 
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            q =+ val;
-            string myString = q.ToString();
-            label1.Text = myString;
+            if (!mClick)
+            {
+                mClick = true;
+                q = q + 1;
+                string myString = q.ToString();
+                label1.Text = myString;
+                mClick = false;
+            }
         }
     }
 }
