@@ -43,23 +43,26 @@ namespace Shoppix
         {
             flowLayoutPanel1.Controls.Clear();
 
-            UserControl[] listItems = new UserControl[1];
+            UserControlProductDesc[] listItems = new UserControlProductDesc[5];
 
-            string[] titles = new string[1] { "bin" };
-            string[] descriptions = new string[1] { "bin is bin" };
-            Image[] icons = new Image[1] { Properties.Resources._0a6yzg9k7ypd1};
-            /*
+            string[] titles = new string[5] { "camellya's armpit", "Vivian's nude", "Master shifu", "pyromaniac armpit", "summer chocolate", };
+            string[] descriptions = new string[5] { "", "", "", "", "", };
+            string[] price = new string[5] { "", "", "", "", "", };
+            Image[] icons = new Image[5] { Properties.Resources.camellya, Properties.Resources.vivian, Properties.Resources.master, Properties.Resources.burnice, Properties.Resources.iori};
+            
             for(int i = 0; i < listItems.Length; i++)
             {
                 //store control object on list array
-                listItems[i] = new UserControl();
+                listItems[i] = new UserControlProductDesc();
+                
+                listItems[i].Name = titles[i];
+                listItems[i].Desc = descriptions[i];
+                listItems[i].Price = price[i];
+                listItems[i].Icon = icons[i];
 
-                listItems[i].titl = titles[i];
-                listItems[i]
-                listItems[i]
-
+                
             }
-            */
+            
         }
 
         public UserControlProducts()

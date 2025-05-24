@@ -140,5 +140,23 @@
   <ItemGroup>
     <None Include="Resources\SELECTA THEME SONG.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iori1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vivian1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burnice1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camellya.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

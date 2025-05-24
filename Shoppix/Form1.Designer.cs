@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.userControlCart2 = new Shoppix.UserControlCart();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.Sidepanel = new System.Windows.Forms.Panel();
@@ -42,6 +41,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.userControlCart2 = new Shoppix.UserControlCart();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,14 +70,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1002, 639);
             this.panel3.TabIndex = 10;
-            // 
-            // userControlCart2
-            // 
-            this.userControlCart2.Location = new System.Drawing.Point(0, 0);
-            this.userControlCart2.Margin = new System.Windows.Forms.Padding(1209729, 336568, 1209729, 336568);
-            this.userControlCart2.Name = "userControlCart2";
-            this.userControlCart2.Size = new System.Drawing.Size(65535, 65535);
-            this.userControlCart2.TabIndex = 0;
             // 
             // button8
             // 
@@ -218,6 +210,14 @@
             this.MainPanel.Size = new System.Drawing.Size(1026, 678);
             this.MainPanel.TabIndex = 11;
             // 
+            // userControlCart2
+            // 
+            this.userControlCart2.Location = new System.Drawing.Point(0, 0);
+            this.userControlCart2.Margin = new System.Windows.Forms.Padding(2721891, 695486, 2721891, 695486);
+            this.userControlCart2.Name = "userControlCart2";
+            this.userControlCart2.Size = new System.Drawing.Size(65535, 65535);
+            this.userControlCart2.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -228,7 +228,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
