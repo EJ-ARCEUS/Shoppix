@@ -64,6 +64,7 @@ namespace Shoppix
             if (!mClick)
             {
                 mClick = true;
+                // if q is equal to 0, output is 0 else, continue to minus
                 if (q == 0)
                 {
                     int i = 0;
