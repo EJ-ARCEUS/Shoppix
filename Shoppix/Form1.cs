@@ -50,7 +50,7 @@ namespace Shoppix
 
         }
 
-        // Before the form is load
+        // Before the form is loaded
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -82,45 +82,61 @@ namespace Shoppix
             userControl.BringToFront();
         }
 
+        // side panel
+
+        private void sidepanel(string s)
+        {
+            if (!Form1.Instance.MainPanel.Controls.ContainsKey(s))
+            {
+                if (s == "UserControlHome")
+                {
+                    addUserControl(Home);
+                    Sidepanel.Height = button1.Height;
+                    Sidepanel.Top = button1.Top;
+                } else if (s == "UserControlProducts")
+                {
+                    addUserControl(Products);
+                    Sidepanel.Height = button8.Height;
+                    Sidepanel.Top = button8.Top;
+                }
+                else if (s == "UserControlCart")
+                {
+                    addUserControl(Cart);
+                    Sidepanel.Height = button2.Height;
+                    Sidepanel.Top = button2.Top;
+                }
+                else if (s == "UserControlCheckOut")
+                {
+                    addUserControl(Checkout);
+                    Sidepanel.Height = button4.Height;
+                    Sidepanel.Top = button4.Top;
+                }
+
+            }
+        }
+
         //   Home / Dashboard
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlHome"))
-            {
-                addUserControl(Home);
-
-                Sidepanel.Height = button1.Height;
-                Sidepanel.Top = button1.Top;
-            }
+            string user = "UserControlHome";
+            sidepanel(user);
         }
 
         //Products
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlProducts"))
-            {
-                addUserControl(Products);
-                Form1.Instance.BackButton.Visible = true;
-
-                Sidepanel.Height = button8.Height;
-                Sidepanel.Top = button8.Top;
-            }
+            string user = "UserControlProducts";
+            sidepanel(user);
         }
 
         //cart
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlCart"))
-            {
-                addUserControl(Cart);
-                Form1.Instance.BackButton.Visible = true;
-
-                Sidepanel.Height = button2.Height;
-                Sidepanel.Top = button2.Top;
-            }
+            string user = "UserControlCart";
+            sidepanel(user);
 
         }
 
@@ -128,29 +144,16 @@ namespace Shoppix
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlCheckOut"))
-            {
-                addUserControl(Checkout);
-                Form1.Instance.BackButton.Visible = true;
-                SoundPlayer selecta = new SoundPlayer(Properties.Resources.SELECTA_THEME_SONG);
-                //selecta.Play();
-
-                Sidepanel.Height = button4.Height;
-                Sidepanel.Top = button4.Top;
-             
-
-            }
+            string user = "UserControlCheckOut";
+            sidepanel(user);
+            SoundPlayer selecta = new SoundPlayer(Properties.Resources.SELECTA_THEME_SONG);
+            //selecta.Play();
         }
 
         // Exit
         private void button7_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void button1_MouseEnter(object sender, EventArgs e)
-        {
-
         }
     }
 }
