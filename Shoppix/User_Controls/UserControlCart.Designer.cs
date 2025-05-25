@@ -66,7 +66,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(831, 40);
+            this.label1.Location = new System.Drawing.Point(860, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 46);
             this.label1.TabIndex = 0;
@@ -75,7 +75,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Info;
-            this.button1.Location = new System.Drawing.Point(812, 513);
+            this.button1.Location = new System.Drawing.Point(833, 514);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 84);
             this.button1.TabIndex = 1;
@@ -91,7 +91,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(783, 646);
+            this.panel1.Size = new System.Drawing.Size(783, 678);
             this.panel1.TabIndex = 3;
             // 
             // flowLayoutPanel1
@@ -106,7 +106,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 73);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(783, 573);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(783, 605);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel3
@@ -260,13 +260,14 @@
             // 
             // UserControlCart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "UserControlCart";
-            this.Size = new System.Drawing.Size(1008, 646);
+            this.Size = new System.Drawing.Size(1026, 678);
+            this.Load += new System.EventHandler(this.UserControlCart_Load);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

@@ -36,5 +36,10 @@ namespace Shoppix
         {
 
         }
+
+        private void UserControlHome_Load(object sender, EventArgs e)
+        {
+            this.Dock = DockStyle.Fill;
+        }
     }
 }

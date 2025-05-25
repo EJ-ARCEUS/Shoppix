@@ -61,5 +61,10 @@ namespace Shoppix
         {
             Form1.Instance.button4.PerformClick();
         }
+
+        private void UserControlCart_Load(object sender, EventArgs e)
+        {
+            this.Dock = DockStyle.Fill;
+        }
     }
 }

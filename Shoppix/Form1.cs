@@ -16,11 +16,11 @@ namespace Shoppix
 {
     public partial class Form1 : Form
     {
-        UserControlHome Home = new UserControlHome();
-        UserControlProducts Products = new UserControlProducts();
-        UserControlCart Cart = new UserControlCart();
-        UserControlCheckOut Checkout = new UserControlCheckOut();
-        UserControlTesting Test = new UserControlTesting();
+        UserControlHome Home = new UserControlHome() { Dock = DockStyle.Fill };
+        UserControlProducts Products = new UserControlProducts() { Dock = DockStyle.Fill };
+        UserControlCart Cart = new UserControlCart() { Dock = DockStyle.Fill };
+        UserControlCheckOut Checkout = new UserControlCheckOut() { Dock = DockStyle.Fill };
+        UserControlTesting Test = new UserControlTesting() { Dock = DockStyle.Fill };
 
         static Form1 _obj;
 
@@ -35,12 +35,6 @@ namespace Shoppix
                 return _obj;
             }
 
-        }
-
-        public Panel Mnpanel
-        {
-            get { return MainPanel; }
-            set { MainPanel = value; }
         }
 
         public Button BackButton
@@ -62,13 +56,9 @@ namespace Shoppix
         {
             BckButton.Visible = false;
             _obj = this;
-
-            Sidepanel.Height = button1.Height;
-            Sidepanel.Top = button1.Top;
-
+            MainPanel.Dock = DockStyle.Fill;
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(Home);
-            Home.Dock = DockStyle.Fill;
 
         }
 
@@ -79,85 +69,48 @@ namespace Shoppix
 
         }
 
+        // multiple user control
+
+        private void addUserControl(UserControl userControl)
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
 
         //   Home / Dashboard
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (!Form1.Instance.Mnpanel.Controls.ContainsKey("UserControlHome"))
-            {
-                UserControlHome Ucp = new UserControlHome();
-                Ucp.Dock = DockStyle.Fill;
-                Form1.Instance.MainPanel.Controls.Add(Ucp);
-
-            }
-            Form1.Instance.MainPanel.Controls["UserControlHome"].BringToFront();
-            Form1.Instance.BackButton.Visible = true;
-
-            Sidepanel.Height = button1.Height;
-            Sidepanel.Top = button1.Top;
+            addUserControl(Home);
         }
 
         //Products
 
         private void button8_Click(object sender, EventArgs e)
         {
-
-            if (!Form1.Instance.Mnpanel.Controls.ContainsKey("UserControlProducts"))
-            {
-                UserControlProducts Ucp = new UserControlProducts();
-                Ucp.Dock = DockStyle.Fill;
-                Form1.Instance.MainPanel.Controls.Add(Ucp);
-
-            }
-            Form1.Instance.MainPanel.Controls["UserControlProducts"].BringToFront();
+            addUserControl(Products);
             Form1.Instance.BackButton.Visible = true;
-
-            Sidepanel.Height = button8.Height;
-            Sidepanel.Top = button8.Top;
         }
 
         //cart
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!Form1.Instance.Mnpanel.Controls.ContainsKey("UserControlCart"))
-            {
-                Form1.Instance.Mnpanel.Controls.Clear();
-                UserControlCart Ucc = new UserControlCart();
-                Ucc.Dock = DockStyle.Fill;
-                Form1.Instance.MainPanel.Controls.Add(Ucc);
-
-
-            }
-            Form1.Instance.MainPanel.Controls["UserControlCart"].BringToFront();
+            addUserControl(Cart);
             Form1.Instance.BackButton.Visible = true;
-
-            Sidepanel.Height = button2.Height;
-            Sidepanel.Top = button2.Top;
         }
-
 
         // Checkout
 
         private void button4_Click(object sender, EventArgs e)
         {
-            List<CartItem> cartItems = Cart.GetCartItems();
-
-            UserControlCheckOut checkout = new UserControlCheckOut();
-            checkout.LoadCartItems(cartItems);
-            MainPanel.Controls.Clear();
-            MainPanel.Controls.Add(checkout);
-
-            Sidepanel.Height = button4.Height;
-            Sidepanel.Top = button4.Top;
-
+            addUserControl(Checkout);
+            Form1.Instance.BackButton.Visible = true;
             SoundPlayer selecta = new SoundPlayer(Properties.Resources.SELECTA_THEME_SONG);
             //selecta.Play();
 
         }
-
 
         // Exit
         private void button7_Click(object sender, EventArgs e)
@@ -165,8 +118,9 @@ namespace Shoppix
             Application.Exit();
         }
 
-        
-    }
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
 
-    
+        }
+    }
 }
