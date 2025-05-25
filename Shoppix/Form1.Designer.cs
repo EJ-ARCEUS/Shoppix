@@ -38,6 +38,7 @@
             this.BckButton = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.Sidepanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +46,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.Sidepanel);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button4);
@@ -182,6 +184,14 @@
             this.MainPanel.Size = new System.Drawing.Size(1026, 678);
             this.MainPanel.TabIndex = 11;
             // 
+            // Sidepanel
+            // 
+            this.Sidepanel.BackColor = System.Drawing.Color.DimGray;
+            this.Sidepanel.Location = new System.Drawing.Point(6, 106);
+            this.Sidepanel.Name = "Sidepanel";
+            this.Sidepanel.Size = new System.Drawing.Size(10, 90);
+            this.Sidepanel.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -220,6 +230,7 @@
         public System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.Panel Sidepanel;
     }
 }
 

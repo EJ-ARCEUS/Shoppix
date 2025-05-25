@@ -60,6 +60,9 @@ namespace Shoppix
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(Home);
 
+            Sidepanel.Height = button1.Height;
+            Sidepanel.Top = button1.Top;
+
         }
 
         private void BckButton_Click(object sender, EventArgs e)
@@ -73,6 +76,7 @@ namespace Shoppix
 
         private void addUserControl(UserControl userControl)
         {
+
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(userControl);
             userControl.BringToFront();
@@ -82,34 +86,60 @@ namespace Shoppix
 
         private void button1_Click(object sender, EventArgs e)
         {
-            addUserControl(Home);
+            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlHome"))
+            {
+                addUserControl(Home);
+
+                Sidepanel.Height = button1.Height;
+                Sidepanel.Top = button1.Top;
+            }
         }
 
         //Products
 
         private void button8_Click(object sender, EventArgs e)
         {
-            addUserControl(Products);
-            Form1.Instance.BackButton.Visible = true;
+            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlProducts"))
+            {
+                addUserControl(Products);
+                Form1.Instance.BackButton.Visible = true;
+
+                Sidepanel.Height = button8.Height;
+                Sidepanel.Top = button8.Top;
+            }
         }
 
         //cart
 
         private void button2_Click(object sender, EventArgs e)
         {
-            addUserControl(Cart);
-            Form1.Instance.BackButton.Visible = true;
+            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlCart"))
+            {
+                addUserControl(Cart);
+                Form1.Instance.BackButton.Visible = true;
+
+                Sidepanel.Height = button2.Height;
+                Sidepanel.Top = button2.Top;
+            }
+
         }
 
         // Checkout
 
         private void button4_Click(object sender, EventArgs e)
         {
-            addUserControl(Checkout);
-            Form1.Instance.BackButton.Visible = true;
-            SoundPlayer selecta = new SoundPlayer(Properties.Resources.SELECTA_THEME_SONG);
-            //selecta.Play();
+            if (!Form1.Instance.MainPanel.Controls.ContainsKey("UserControlCheckOut"))
+            {
+                addUserControl(Checkout);
+                Form1.Instance.BackButton.Visible = true;
+                SoundPlayer selecta = new SoundPlayer(Properties.Resources.SELECTA_THEME_SONG);
+                //selecta.Play();
 
+                Sidepanel.Height = button4.Height;
+                Sidepanel.Top = button4.Top;
+             
+
+            }
         }
 
         // Exit
